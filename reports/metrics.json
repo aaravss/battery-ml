@@ -1,0 +1,2254 @@
+{
+  "chosen_variant": "baseline",
+  "recommended_model": "battery_int8",
+  "int8_test_acc_drop": 0.0,
+  "synthetic_experiment": "web-holdout button recall 100.0% -> 100.0% (gain +0.0 pts); val accuracy 99.8% -> 99.8% (drop +0.0 pts) -> keep baseline",
+  "results": {
+    "baseline/battery_float32": {
+      "val": {
+        "n": 403,
+        "accuracy": 0.9975186104218362,
+        "per_class": {
+          "button_cell": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "aa_aaa_9v": {
+            "precision": 0.9815,
+            "recall": 1.0,
+            "f1-score": 0.9907,
+            "support": 53.0
+          },
+          "cylindrical_18650": {
+            "precision": 1.0,
+            "recall": 0.98,
+            "f1-score": 0.9899,
+            "support": 50.0
+          },
+          "phone_pouch": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 300.0
+          }
+        },
+        "macro_f1_present_classes": 0.9935177318354889,
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            53,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            49,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            300
+          ]
+        ],
+        "false_button_alarms": 0,
+        "at_threshold": {
+          "threshold": 0.7,
+          "coverage": 0.9826302729528535,
+          "accuracy_on_covered": 1.0,
+          "errors_let_through": 0
+        }
+      },
+      "test": {
+        "n": 298,
+        "accuracy": 0.9932885906040269,
+        "per_class": {
+          "button_cell": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "aa_aaa_9v": {
+            "precision": 0.9697,
+            "recall": 0.9697,
+            "f1-score": 0.9697,
+            "support": 33.0
+          },
+          "cylindrical_18650": {
+            "precision": 0.9882,
+            "recall": 0.9882,
+            "f1-score": 0.9882,
+            "support": 85.0
+          },
+          "phone_pouch": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 180.0
+          }
+        },
+        "macro_f1_present_classes": 0.985977421271539,
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            32,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            84,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            180
+          ]
+        ],
+        "false_button_alarms": 0,
+        "at_threshold": {
+          "threshold": 0.7,
+          "coverage": 0.9932885906040269,
+          "accuracy_on_covered": 1.0,
+          "errors_let_through": 0
+        }
+      },
+      "web_holdout": {
+        "n": 24,
+        "accuracy": 1.0,
+        "per_class": {
+          "button_cell": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 24.0
+          },
+          "aa_aaa_9v": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "cylindrical_18650": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "phone_pouch": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          }
+        },
+        "macro_f1_present_classes": 1.0,
+        "confusion": [
+          [
+            24,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "false_button_alarms": 0,
+        "at_threshold": {
+          "threshold": 0.7,
+          "coverage": 1.0,
+          "accuracy_on_covered": 1.0,
+          "errors_let_through": 0
+        }
+      },
+      "diagnostic": {
+        "n": 81,
+        "accuracy": 0.8888888888888888,
+        "per_class": {
+          "button_cell": {
+            "precision": 1.0,
+            "recall": 0.9792,
+            "f1-score": 0.9895,
+            "support": 48.0
+          },
+          "aa_aaa_9v": {
+            "precision": 0.9524,
+            "recall": 0.7407,
+            "f1-score": 0.8333,
+            "support": 27.0
+          },
+          "cylindrical_18650": {
+            "precision": 0.4167,
+            "recall": 0.8333,
+            "f1-score": 0.5556,
+            "support": 6.0
+          },
+          "phone_pouch": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          }
+        },
+        "macro_f1_present_classes": 0.7927875243664717,
+        "confusion": [
+          [
+            47,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            20,
+            6,
+            1
+          ],
+          [
+            0,
+            1,
+            5,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "false_button_alarms": 0,
+        "at_threshold": {
+          "threshold": 0.7,
+          "coverage": 0.7037037037037037,
+          "accuracy_on_covered": 0.9473684210526315,
+          "errors_let_through": 3
+        }
+      },
+      "threshold_table_val": {
+        "0.00": {
+          "coverage": 1.0,
+          "accuracy": 0.9975186104218362
+        },
+        "0.05": {
+          "coverage": 1.0,
+          "accuracy": 0.9975186104218362
+        },
+        "0.10": {
+          "coverage": 1.0,
+          "accuracy": 0.9975186104218362
+        },
+        "0.15": {
+          "coverage": 1.0,
+          "accuracy": 0.9975186104218362
+        },
+        "0.20": {
+          "coverage": 1.0,
+          "accuracy": 0.9975186104218362
+        },
+        "0.25": {
+          "coverage": 1.0,
+          "accuracy": 0.9975186104218362
+        },
+        "0.30": {
+          "coverage": 1.0,
+          "accuracy": 0.9975186104218362
+        },
+        "0.35": {
+          "coverage": 1.0,
+          "accuracy": 0.9975186104218362
+        },
+        "0.40": {
+          "coverage": 1.0,
+          "accuracy": 0.9975186104218362
+        },
+        "0.45": {
+          "coverage": 1.0,
+          "accuracy": 0.9975186104218362
+        },
+        "0.50": {
+          "coverage": 0.9975186104218362,
+          "accuracy": 1.0
+        },
+        "0.55": {
+          "coverage": 0.9975186104218362,
+          "accuracy": 1.0
+        },
+        "0.60": {
+          "coverage": 0.9925558312655087,
+          "accuracy": 1.0
+        },
+        "0.65": {
+          "coverage": 0.9900744416873449,
+          "accuracy": 1.0
+        },
+        "0.70": {
+          "coverage": 0.9826302729528535,
+          "accuracy": 1.0
+        },
+        "0.75": {
+          "coverage": 0.9801488833746899,
+          "accuracy": 1.0
+        },
+        "0.80": {
+          "coverage": 0.9776674937965261,
+          "accuracy": 1.0
+        },
+        "0.85": {
+          "coverage": 0.9702233250620348,
+          "accuracy": 1.0
+        },
+        "0.90": {
+          "coverage": 0.8957816377171216,
+          "accuracy": 1.0
+        },
+        "0.95": {
+          "coverage": 0.6873449131513648,
+          "accuracy": 1.0
+        },
+        "1.00": {
+          "coverage": 0.0,
+          "accuracy": NaN
+        }
+      },
+      "threshold_table_test": {
+        "0.00": {
+          "coverage": 1.0,
+          "accuracy": 0.9932885906040269
+        },
+        "0.05": {
+          "coverage": 1.0,
+          "accuracy": 0.9932885906040269
+        },
+        "0.10": {
+          "coverage": 1.0,
+          "accuracy": 0.9932885906040269
+        },
+        "0.15": {
+          "coverage": 1.0,
+          "accuracy": 0.9932885906040269
+        },
+        "0.20": {
+          "coverage": 1.0,
+          "accuracy": 0.9932885906040269
+        },
+        "0.25": {
+          "coverage": 1.0,
+          "accuracy": 0.9932885906040269
+        },
+        "0.30": {
+          "coverage": 1.0,
+          "accuracy": 0.9932885906040269
+        },
+        "0.35": {
+          "coverage": 1.0,
+          "accuracy": 0.9932885906040269
+        },
+        "0.40": {
+          "coverage": 1.0,
+          "accuracy": 0.9932885906040269
+        },
+        "0.45": {
+          "coverage": 1.0,
+          "accuracy": 0.9932885906040269
+        },
+        "0.50": {
+          "coverage": 0.9966442953020134,
+          "accuracy": 0.9966329966329966
+        },
+        "0.55": {
+          "coverage": 0.9966442953020134,
+          "accuracy": 0.9966329966329966
+        },
+        "0.60": {
+          "coverage": 0.9966442953020134,
+          "accuracy": 0.9966329966329966
+        },
+        "0.65": {
+          "coverage": 0.9966442953020134,
+          "accuracy": 0.9966329966329966
+        },
+        "0.70": {
+          "coverage": 0.9932885906040269,
+          "accuracy": 1.0
+        },
+        "0.75": {
+          "coverage": 0.9832214765100671,
+          "accuracy": 1.0
+        },
+        "0.80": {
+          "coverage": 0.9731543624161074,
+          "accuracy": 1.0
+        },
+        "0.85": {
+          "coverage": 0.9530201342281879,
+          "accuracy": 1.0
+        },
+        "0.90": {
+          "coverage": 0.8758389261744967,
+          "accuracy": 1.0
+        },
+        "0.95": {
+          "coverage": 0.6308724832214765,
+          "accuracy": 1.0
+        },
+        "1.00": {
+          "coverage": 0.0,
+          "accuracy": NaN
+        }
+      },
+      "threshold_table_diagnostic": {
+        "0.00": {
+          "coverage": 1.0,
+          "accuracy": 0.8888888888888888
+        },
+        "0.05": {
+          "coverage": 1.0,
+          "accuracy": 0.8888888888888888
+        },
+        "0.10": {
+          "coverage": 1.0,
+          "accuracy": 0.8888888888888888
+        },
+        "0.15": {
+          "coverage": 1.0,
+          "accuracy": 0.8888888888888888
+        },
+        "0.20": {
+          "coverage": 1.0,
+          "accuracy": 0.8888888888888888
+        },
+        "0.25": {
+          "coverage": 1.0,
+          "accuracy": 0.8888888888888888
+        },
+        "0.30": {
+          "coverage": 1.0,
+          "accuracy": 0.8888888888888888
+        },
+        "0.35": {
+          "coverage": 0.9876543209876543,
+          "accuracy": 0.8875
+        },
+        "0.40": {
+          "coverage": 0.9753086419753086,
+          "accuracy": 0.8860759493670886
+        },
+        "0.45": {
+          "coverage": 0.9382716049382716,
+          "accuracy": 0.9078947368421053
+        },
+        "0.50": {
+          "coverage": 0.9135802469135802,
+          "accuracy": 0.9054054054054054
+        },
+        "0.55": {
+          "coverage": 0.8888888888888888,
+          "accuracy": 0.9166666666666666
+        },
+        "0.60": {
+          "coverage": 0.8395061728395061,
+          "accuracy": 0.9264705882352942
+        },
+        "0.65": {
+          "coverage": 0.7407407407407407,
+          "accuracy": 0.95
+        },
+        "0.70": {
+          "coverage": 0.7037037037037037,
+          "accuracy": 0.9473684210526315
+        },
+        "0.75": {
+          "coverage": 0.6790123456790124,
+          "accuracy": 0.9454545454545454
+        },
+        "0.80": {
+          "coverage": 0.5925925925925926,
+          "accuracy": 0.9375
+        },
+        "0.85": {
+          "coverage": 0.5185185185185185,
+          "accuracy": 0.9285714285714286
+        },
+        "0.90": {
+          "coverage": 0.32098765432098764,
+          "accuracy": 0.9230769230769231
+        },
+        "0.95": {
+          "coverage": 0.09876543209876543,
+          "accuracy": 0.875
+        },
+        "1.00": {
+          "coverage": 0.0,
+          "accuracy": NaN
+        }
+      },
+      "threshold_val_calibrated": 0.0,
+      "threshold": 0.7,
+      "test_accuracy_by_source": {
+        "recybat24": 1.0,
+        "singapore": 0.9534883720930233
+      },
+      "web_holdout_button_recall": 1.0,
+      "web_holdout_predicted_as": {
+        "button_cell": 24
+      },
+      "size_kb": 8701.1
+    },
+    "baseline/battery_int8": {
+      "val": {
+        "n": 403,
+        "accuracy": 0.9950372208436724,
+        "per_class": {
+          "button_cell": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "aa_aaa_9v": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 53.0
+          },
+          "cylindrical_18650": {
+            "precision": 0.98,
+            "recall": 0.98,
+            "f1-score": 0.98,
+            "support": 50.0
+          },
+          "phone_pouch": {
+            "precision": 0.9967,
+            "recall": 0.9967,
+            "f1-score": 0.9967,
+            "support": 300.0
+          }
+        },
+        "macro_f1_present_classes": 0.9922222222222222,
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            53,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            49,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            299
+          ]
+        ],
+        "false_button_alarms": 0,
+        "at_threshold": {
+          "threshold": 0.7,
+          "coverage": 0.9801488833746899,
+          "accuracy_on_covered": 1.0,
+          "errors_let_through": 0
+        }
+      },
+      "test": {
+        "n": 298,
+        "accuracy": 0.9932885906040269,
+        "per_class": {
+          "button_cell": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "aa_aaa_9v": {
+            "precision": 0.9697,
+            "recall": 0.9697,
+            "f1-score": 0.9697,
+            "support": 33.0
+          },
+          "cylindrical_18650": {
+            "precision": 0.9882,
+            "recall": 0.9882,
+            "f1-score": 0.9882,
+            "support": 85.0
+          },
+          "phone_pouch": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 180.0
+          }
+        },
+        "macro_f1_present_classes": 0.985977421271539,
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            32,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            84,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            180
+          ]
+        ],
+        "false_button_alarms": 0,
+        "at_threshold": {
+          "threshold": 0.7,
+          "coverage": 0.9899328859060402,
+          "accuracy_on_covered": 1.0,
+          "errors_let_through": 0
+        }
+      },
+      "web_holdout": {
+        "n": 24,
+        "accuracy": 1.0,
+        "per_class": {
+          "button_cell": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 24.0
+          },
+          "aa_aaa_9v": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "cylindrical_18650": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "phone_pouch": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          }
+        },
+        "macro_f1_present_classes": 1.0,
+        "confusion": [
+          [
+            24,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "false_button_alarms": 0,
+        "at_threshold": {
+          "threshold": 0.7,
+          "coverage": 1.0,
+          "accuracy_on_covered": 1.0,
+          "errors_let_through": 0
+        }
+      },
+      "diagnostic": {
+        "n": 81,
+        "accuracy": 0.8888888888888888,
+        "per_class": {
+          "button_cell": {
+            "precision": 1.0,
+            "recall": 0.9792,
+            "f1-score": 0.9895,
+            "support": 48.0
+          },
+          "aa_aaa_9v": {
+            "precision": 0.913,
+            "recall": 0.7778,
+            "f1-score": 0.84,
+            "support": 27.0
+          },
+          "cylindrical_18650": {
+            "precision": 0.4,
+            "recall": 0.6667,
+            "f1-score": 0.5,
+            "support": 6.0
+          },
+          "phone_pouch": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          }
+        },
+        "macro_f1_present_classes": 0.7764912280701753,
+        "confusion": [
+          [
+            47,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            21,
+            5,
+            1
+          ],
+          [
+            0,
+            2,
+            4,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "false_button_alarms": 0,
+        "at_threshold": {
+          "threshold": 0.7,
+          "coverage": 0.7407407407407407,
+          "accuracy_on_covered": 0.9333333333333333,
+          "errors_let_through": 4
+        }
+      },
+      "threshold_table_val": {
+        "0.00": {
+          "coverage": 1.0,
+          "accuracy": 0.9950372208436724
+        },
+        "0.05": {
+          "coverage": 1.0,
+          "accuracy": 0.9950372208436724
+        },
+        "0.10": {
+          "coverage": 1.0,
+          "accuracy": 0.9950372208436724
+        },
+        "0.15": {
+          "coverage": 1.0,
+          "accuracy": 0.9950372208436724
+        },
+        "0.20": {
+          "coverage": 1.0,
+          "accuracy": 0.9950372208436724
+        },
+        "0.25": {
+          "coverage": 1.0,
+          "accuracy": 0.9950372208436724
+        },
+        "0.30": {
+          "coverage": 1.0,
+          "accuracy": 0.9950372208436724
+        },
+        "0.35": {
+          "coverage": 1.0,
+          "accuracy": 0.9950372208436724
+        },
+        "0.40": {
+          "coverage": 1.0,
+          "accuracy": 0.9950372208436724
+        },
+        "0.45": {
+          "coverage": 1.0,
+          "accuracy": 0.9950372208436724
+        },
+        "0.50": {
+          "coverage": 1.0,
+          "accuracy": 0.9950372208436724
+        },
+        "0.55": {
+          "coverage": 0.9975186104218362,
+          "accuracy": 0.9975124378109452
+        },
+        "0.60": {
+          "coverage": 0.9925558312655087,
+          "accuracy": 0.9975
+        },
+        "0.65": {
+          "coverage": 0.9875930521091811,
+          "accuracy": 1.0
+        },
+        "0.70": {
+          "coverage": 0.9801488833746899,
+          "accuracy": 1.0
+        },
+        "0.75": {
+          "coverage": 0.9776674937965261,
+          "accuracy": 1.0
+        },
+        "0.80": {
+          "coverage": 0.9627791563275434,
+          "accuracy": 1.0
+        },
+        "0.85": {
+          "coverage": 0.9503722084367245,
+          "accuracy": 1.0
+        },
+        "0.90": {
+          "coverage": 0.9032258064516129,
+          "accuracy": 1.0
+        },
+        "0.95": {
+          "coverage": 0.6501240694789082,
+          "accuracy": 1.0
+        },
+        "1.00": {
+          "coverage": 0.0,
+          "accuracy": NaN
+        }
+      },
+      "threshold_table_test": {
+        "0.00": {
+          "coverage": 1.0,
+          "accuracy": 0.9932885906040269
+        },
+        "0.05": {
+          "coverage": 1.0,
+          "accuracy": 0.9932885906040269
+        },
+        "0.10": {
+          "coverage": 1.0,
+          "accuracy": 0.9932885906040269
+        },
+        "0.15": {
+          "coverage": 1.0,
+          "accuracy": 0.9932885906040269
+        },
+        "0.20": {
+          "coverage": 1.0,
+          "accuracy": 0.9932885906040269
+        },
+        "0.25": {
+          "coverage": 1.0,
+          "accuracy": 0.9932885906040269
+        },
+        "0.30": {
+          "coverage": 1.0,
+          "accuracy": 0.9932885906040269
+        },
+        "0.35": {
+          "coverage": 1.0,
+          "accuracy": 0.9932885906040269
+        },
+        "0.40": {
+          "coverage": 1.0,
+          "accuracy": 0.9932885906040269
+        },
+        "0.45": {
+          "coverage": 1.0,
+          "accuracy": 0.9932885906040269
+        },
+        "0.50": {
+          "coverage": 1.0,
+          "accuracy": 0.9932885906040269
+        },
+        "0.55": {
+          "coverage": 0.9966442953020134,
+          "accuracy": 0.9966329966329966
+        },
+        "0.60": {
+          "coverage": 0.9966442953020134,
+          "accuracy": 0.9966329966329966
+        },
+        "0.65": {
+          "coverage": 0.9899328859060402,
+          "accuracy": 1.0
+        },
+        "0.70": {
+          "coverage": 0.9899328859060402,
+          "accuracy": 1.0
+        },
+        "0.75": {
+          "coverage": 0.9798657718120806,
+          "accuracy": 1.0
+        },
+        "0.80": {
+          "coverage": 0.9731543624161074,
+          "accuracy": 1.0
+        },
+        "0.85": {
+          "coverage": 0.9362416107382551,
+          "accuracy": 1.0
+        },
+        "0.90": {
+          "coverage": 0.8355704697986577,
+          "accuracy": 1.0
+        },
+        "0.95": {
+          "coverage": 0.5671140939597316,
+          "accuracy": 1.0
+        },
+        "1.00": {
+          "coverage": 0.0,
+          "accuracy": NaN
+        }
+      },
+      "threshold_table_diagnostic": {
+        "0.00": {
+          "coverage": 1.0,
+          "accuracy": 0.8888888888888888
+        },
+        "0.05": {
+          "coverage": 1.0,
+          "accuracy": 0.8888888888888888
+        },
+        "0.10": {
+          "coverage": 1.0,
+          "accuracy": 0.8888888888888888
+        },
+        "0.15": {
+          "coverage": 1.0,
+          "accuracy": 0.8888888888888888
+        },
+        "0.20": {
+          "coverage": 1.0,
+          "accuracy": 0.8888888888888888
+        },
+        "0.25": {
+          "coverage": 1.0,
+          "accuracy": 0.8888888888888888
+        },
+        "0.30": {
+          "coverage": 1.0,
+          "accuracy": 0.8888888888888888
+        },
+        "0.35": {
+          "coverage": 1.0,
+          "accuracy": 0.8888888888888888
+        },
+        "0.40": {
+          "coverage": 0.9753086419753086,
+          "accuracy": 0.8860759493670886
+        },
+        "0.45": {
+          "coverage": 0.9382716049382716,
+          "accuracy": 0.9210526315789473
+        },
+        "0.50": {
+          "coverage": 0.9012345679012346,
+          "accuracy": 0.9178082191780822
+        },
+        "0.55": {
+          "coverage": 0.9012345679012346,
+          "accuracy": 0.9178082191780822
+        },
+        "0.60": {
+          "coverage": 0.8271604938271605,
+          "accuracy": 0.9253731343283582
+        },
+        "0.65": {
+          "coverage": 0.8148148148148148,
+          "accuracy": 0.9242424242424242
+        },
+        "0.70": {
+          "coverage": 0.7407407407407407,
+          "accuracy": 0.9333333333333333
+        },
+        "0.75": {
+          "coverage": 0.7037037037037037,
+          "accuracy": 0.9473684210526315
+        },
+        "0.80": {
+          "coverage": 0.6049382716049383,
+          "accuracy": 0.9387755102040817
+        },
+        "0.85": {
+          "coverage": 0.4691358024691358,
+          "accuracy": 0.9473684210526315
+        },
+        "0.90": {
+          "coverage": 0.2839506172839506,
+          "accuracy": 0.9565217391304348
+        },
+        "0.95": {
+          "coverage": 0.12345679012345678,
+          "accuracy": 0.9
+        },
+        "1.00": {
+          "coverage": 0.0,
+          "accuracy": NaN
+        }
+      },
+      "threshold_val_calibrated": 0.0,
+      "threshold": 0.7,
+      "test_accuracy_by_source": {
+        "recybat24": 1.0,
+        "singapore": 0.9534883720930233
+      },
+      "web_holdout_button_recall": 1.0,
+      "web_holdout_predicted_as": {
+        "button_cell": 24
+      },
+      "size_kb": 2675.8
+    },
+    "synthetic/battery_float32": {
+      "val": {
+        "n": 403,
+        "accuracy": 0.9975186104218362,
+        "per_class": {
+          "button_cell": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "aa_aaa_9v": {
+            "precision": 0.9815,
+            "recall": 1.0,
+            "f1-score": 0.9907,
+            "support": 53.0
+          },
+          "cylindrical_18650": {
+            "precision": 1.0,
+            "recall": 0.98,
+            "f1-score": 0.9899,
+            "support": 50.0
+          },
+          "phone_pouch": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 300.0
+          }
+        },
+        "macro_f1_present_classes": 0.9935177318354889,
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            53,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            49,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            300
+          ]
+        ],
+        "false_button_alarms": 0,
+        "at_threshold": {
+          "threshold": 0.7,
+          "coverage": 0.9826302729528535,
+          "accuracy_on_covered": 1.0,
+          "errors_let_through": 0
+        }
+      },
+      "test": {
+        "n": 298,
+        "accuracy": 0.9966442953020134,
+        "per_class": {
+          "button_cell": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "aa_aaa_9v": {
+            "precision": 1.0,
+            "recall": 0.9697,
+            "f1-score": 0.9846,
+            "support": 33.0
+          },
+          "cylindrical_18650": {
+            "precision": 0.9884,
+            "recall": 1.0,
+            "f1-score": 0.9942,
+            "support": 85.0
+          },
+          "phone_pouch": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 180.0
+          }
+        },
+        "macro_f1_present_classes": 0.9929224771330034,
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            32,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            85,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            180
+          ]
+        ],
+        "false_button_alarms": 0,
+        "at_threshold": {
+          "threshold": 0.7,
+          "coverage": 0.9932885906040269,
+          "accuracy_on_covered": 1.0,
+          "errors_let_through": 0
+        }
+      },
+      "web_holdout": {
+        "n": 24,
+        "accuracy": 1.0,
+        "per_class": {
+          "button_cell": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 24.0
+          },
+          "aa_aaa_9v": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "cylindrical_18650": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "phone_pouch": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          }
+        },
+        "macro_f1_present_classes": 1.0,
+        "confusion": [
+          [
+            24,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "false_button_alarms": 0,
+        "at_threshold": {
+          "threshold": 0.7,
+          "coverage": 1.0,
+          "accuracy_on_covered": 1.0,
+          "errors_let_through": 0
+        }
+      },
+      "diagnostic": {
+        "n": 81,
+        "accuracy": 0.8765432098765432,
+        "per_class": {
+          "button_cell": {
+            "precision": 0.9412,
+            "recall": 1.0,
+            "f1-score": 0.9697,
+            "support": 48.0
+          },
+          "aa_aaa_9v": {
+            "precision": 0.9048,
+            "recall": 0.7037,
+            "f1-score": 0.7917,
+            "support": 27.0
+          },
+          "cylindrical_18650": {
+            "precision": 0.5714,
+            "recall": 0.6667,
+            "f1-score": 0.6154,
+            "support": 6.0
+          },
+          "phone_pouch": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          }
+        },
+        "macro_f1_present_classes": 0.7922494172494172,
+        "confusion": [
+          [
+            48,
+            0,
+            0,
+            0
+          ],
+          [
+            3,
+            19,
+            3,
+            2
+          ],
+          [
+            0,
+            2,
+            4,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "false_button_alarms": 3,
+        "at_threshold": {
+          "threshold": 0.7,
+          "coverage": 0.7654320987654321,
+          "accuracy_on_covered": 0.9516129032258065,
+          "errors_let_through": 3
+        }
+      },
+      "threshold_table_val": {
+        "0.00": {
+          "coverage": 1.0,
+          "accuracy": 0.9975186104218362
+        },
+        "0.05": {
+          "coverage": 1.0,
+          "accuracy": 0.9975186104218362
+        },
+        "0.10": {
+          "coverage": 1.0,
+          "accuracy": 0.9975186104218362
+        },
+        "0.15": {
+          "coverage": 1.0,
+          "accuracy": 0.9975186104218362
+        },
+        "0.20": {
+          "coverage": 1.0,
+          "accuracy": 0.9975186104218362
+        },
+        "0.25": {
+          "coverage": 1.0,
+          "accuracy": 0.9975186104218362
+        },
+        "0.30": {
+          "coverage": 1.0,
+          "accuracy": 0.9975186104218362
+        },
+        "0.35": {
+          "coverage": 1.0,
+          "accuracy": 0.9975186104218362
+        },
+        "0.40": {
+          "coverage": 1.0,
+          "accuracy": 0.9975186104218362
+        },
+        "0.45": {
+          "coverage": 1.0,
+          "accuracy": 0.9975186104218362
+        },
+        "0.50": {
+          "coverage": 0.9975186104218362,
+          "accuracy": 1.0
+        },
+        "0.55": {
+          "coverage": 0.9975186104218362,
+          "accuracy": 1.0
+        },
+        "0.60": {
+          "coverage": 0.9950372208436724,
+          "accuracy": 1.0
+        },
+        "0.65": {
+          "coverage": 0.9900744416873449,
+          "accuracy": 1.0
+        },
+        "0.70": {
+          "coverage": 0.9826302729528535,
+          "accuracy": 1.0
+        },
+        "0.75": {
+          "coverage": 0.9801488833746899,
+          "accuracy": 1.0
+        },
+        "0.80": {
+          "coverage": 0.9801488833746899,
+          "accuracy": 1.0
+        },
+        "0.85": {
+          "coverage": 0.9727047146401985,
+          "accuracy": 1.0
+        },
+        "0.90": {
+          "coverage": 0.9503722084367245,
+          "accuracy": 1.0
+        },
+        "0.95": {
+          "coverage": 0.749379652605459,
+          "accuracy": 1.0
+        },
+        "1.00": {
+          "coverage": 0.0,
+          "accuracy": NaN
+        }
+      },
+      "threshold_table_test": {
+        "0.00": {
+          "coverage": 1.0,
+          "accuracy": 0.9966442953020134
+        },
+        "0.05": {
+          "coverage": 1.0,
+          "accuracy": 0.9966442953020134
+        },
+        "0.10": {
+          "coverage": 1.0,
+          "accuracy": 0.9966442953020134
+        },
+        "0.15": {
+          "coverage": 1.0,
+          "accuracy": 0.9966442953020134
+        },
+        "0.20": {
+          "coverage": 1.0,
+          "accuracy": 0.9966442953020134
+        },
+        "0.25": {
+          "coverage": 1.0,
+          "accuracy": 0.9966442953020134
+        },
+        "0.30": {
+          "coverage": 1.0,
+          "accuracy": 0.9966442953020134
+        },
+        "0.35": {
+          "coverage": 1.0,
+          "accuracy": 0.9966442953020134
+        },
+        "0.40": {
+          "coverage": 1.0,
+          "accuracy": 0.9966442953020134
+        },
+        "0.45": {
+          "coverage": 0.9966442953020134,
+          "accuracy": 1.0
+        },
+        "0.50": {
+          "coverage": 0.9966442953020134,
+          "accuracy": 1.0
+        },
+        "0.55": {
+          "coverage": 0.9966442953020134,
+          "accuracy": 1.0
+        },
+        "0.60": {
+          "coverage": 0.9966442953020134,
+          "accuracy": 1.0
+        },
+        "0.65": {
+          "coverage": 0.9932885906040269,
+          "accuracy": 1.0
+        },
+        "0.70": {
+          "coverage": 0.9932885906040269,
+          "accuracy": 1.0
+        },
+        "0.75": {
+          "coverage": 0.9832214765100671,
+          "accuracy": 1.0
+        },
+        "0.80": {
+          "coverage": 0.9731543624161074,
+          "accuracy": 1.0
+        },
+        "0.85": {
+          "coverage": 0.9630872483221476,
+          "accuracy": 1.0
+        },
+        "0.90": {
+          "coverage": 0.9161073825503355,
+          "accuracy": 1.0
+        },
+        "0.95": {
+          "coverage": 0.6845637583892618,
+          "accuracy": 1.0
+        },
+        "1.00": {
+          "coverage": 0.0,
+          "accuracy": NaN
+        }
+      },
+      "threshold_table_diagnostic": {
+        "0.00": {
+          "coverage": 1.0,
+          "accuracy": 0.8765432098765432
+        },
+        "0.05": {
+          "coverage": 1.0,
+          "accuracy": 0.8765432098765432
+        },
+        "0.10": {
+          "coverage": 1.0,
+          "accuracy": 0.8765432098765432
+        },
+        "0.15": {
+          "coverage": 1.0,
+          "accuracy": 0.8765432098765432
+        },
+        "0.20": {
+          "coverage": 1.0,
+          "accuracy": 0.8765432098765432
+        },
+        "0.25": {
+          "coverage": 1.0,
+          "accuracy": 0.8765432098765432
+        },
+        "0.30": {
+          "coverage": 1.0,
+          "accuracy": 0.8765432098765432
+        },
+        "0.35": {
+          "coverage": 1.0,
+          "accuracy": 0.8765432098765432
+        },
+        "0.40": {
+          "coverage": 0.9629629629629629,
+          "accuracy": 0.8846153846153846
+        },
+        "0.45": {
+          "coverage": 0.9382716049382716,
+          "accuracy": 0.9078947368421053
+        },
+        "0.50": {
+          "coverage": 0.9382716049382716,
+          "accuracy": 0.9078947368421053
+        },
+        "0.55": {
+          "coverage": 0.9135802469135802,
+          "accuracy": 0.918918918918919
+        },
+        "0.60": {
+          "coverage": 0.8888888888888888,
+          "accuracy": 0.9166666666666666
+        },
+        "0.65": {
+          "coverage": 0.8395061728395061,
+          "accuracy": 0.9411764705882353
+        },
+        "0.70": {
+          "coverage": 0.7654320987654321,
+          "accuracy": 0.9516129032258065
+        },
+        "0.75": {
+          "coverage": 0.7407407407407407,
+          "accuracy": 0.95
+        },
+        "0.80": {
+          "coverage": 0.691358024691358,
+          "accuracy": 0.9642857142857143
+        },
+        "0.85": {
+          "coverage": 0.6049382716049383,
+          "accuracy": 0.9591836734693877
+        },
+        "0.90": {
+          "coverage": 0.5679012345679012,
+          "accuracy": 0.9782608695652174
+        },
+        "0.95": {
+          "coverage": 0.3950617283950617,
+          "accuracy": 0.96875
+        },
+        "1.00": {
+          "coverage": 0.0,
+          "accuracy": NaN
+        }
+      },
+      "threshold_val_calibrated": 0.0,
+      "threshold": 0.7,
+      "test_accuracy_by_source": {
+        "recybat24": 1.0,
+        "singapore": 0.9767441860465116
+      },
+      "web_holdout_button_recall": 1.0,
+      "web_holdout_predicted_as": {
+        "button_cell": 24
+      },
+      "size_kb": 8701.1
+    },
+    "synthetic/battery_int8": {
+      "val": {
+        "n": 403,
+        "accuracy": 1.0,
+        "per_class": {
+          "button_cell": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "aa_aaa_9v": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 53.0
+          },
+          "cylindrical_18650": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 50.0
+          },
+          "phone_pouch": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 300.0
+          }
+        },
+        "macro_f1_present_classes": 1.0,
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            53,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            50,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            300
+          ]
+        ],
+        "false_button_alarms": 0,
+        "at_threshold": {
+          "threshold": 0.7,
+          "coverage": 0.9801488833746899,
+          "accuracy_on_covered": 1.0,
+          "errors_let_through": 0
+        }
+      },
+      "test": {
+        "n": 298,
+        "accuracy": 1.0,
+        "per_class": {
+          "button_cell": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "aa_aaa_9v": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 33.0
+          },
+          "cylindrical_18650": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 85.0
+          },
+          "phone_pouch": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 180.0
+          }
+        },
+        "macro_f1_present_classes": 1.0,
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            33,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            85,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            180
+          ]
+        ],
+        "false_button_alarms": 0,
+        "at_threshold": {
+          "threshold": 0.7,
+          "coverage": 0.9865771812080537,
+          "accuracy_on_covered": 1.0,
+          "errors_let_through": 0
+        }
+      },
+      "web_holdout": {
+        "n": 24,
+        "accuracy": 1.0,
+        "per_class": {
+          "button_cell": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 24.0
+          },
+          "aa_aaa_9v": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "cylindrical_18650": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "phone_pouch": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          }
+        },
+        "macro_f1_present_classes": 1.0,
+        "confusion": [
+          [
+            24,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "false_button_alarms": 0,
+        "at_threshold": {
+          "threshold": 0.7,
+          "coverage": 1.0,
+          "accuracy_on_covered": 1.0,
+          "errors_let_through": 0
+        }
+      },
+      "diagnostic": {
+        "n": 81,
+        "accuracy": 0.9012345679012346,
+        "per_class": {
+          "button_cell": {
+            "precision": 0.96,
+            "recall": 1.0,
+            "f1-score": 0.9796,
+            "support": 48.0
+          },
+          "aa_aaa_9v": {
+            "precision": 0.913,
+            "recall": 0.7778,
+            "f1-score": 0.84,
+            "support": 27.0
+          },
+          "cylindrical_18650": {
+            "precision": 0.5714,
+            "recall": 0.6667,
+            "f1-score": 0.6154,
+            "support": 6.0
+          },
+          "phone_pouch": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          }
+        },
+        "macro_f1_present_classes": 0.8116588173731031,
+        "confusion": [
+          [
+            48,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            21,
+            3,
+            1
+          ],
+          [
+            0,
+            2,
+            4,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "false_button_alarms": 2,
+        "at_threshold": {
+          "threshold": 0.7,
+          "coverage": 0.8148148148148148,
+          "accuracy_on_covered": 0.9393939393939394,
+          "errors_let_through": 4
+        }
+      },
+      "threshold_table_val": {
+        "0.00": {
+          "coverage": 1.0,
+          "accuracy": 1.0
+        },
+        "0.05": {
+          "coverage": 1.0,
+          "accuracy": 1.0
+        },
+        "0.10": {
+          "coverage": 1.0,
+          "accuracy": 1.0
+        },
+        "0.15": {
+          "coverage": 1.0,
+          "accuracy": 1.0
+        },
+        "0.20": {
+          "coverage": 1.0,
+          "accuracy": 1.0
+        },
+        "0.25": {
+          "coverage": 1.0,
+          "accuracy": 1.0
+        },
+        "0.30": {
+          "coverage": 1.0,
+          "accuracy": 1.0
+        },
+        "0.35": {
+          "coverage": 1.0,
+          "accuracy": 1.0
+        },
+        "0.40": {
+          "coverage": 1.0,
+          "accuracy": 1.0
+        },
+        "0.45": {
+          "coverage": 1.0,
+          "accuracy": 1.0
+        },
+        "0.50": {
+          "coverage": 0.9975186104218362,
+          "accuracy": 1.0
+        },
+        "0.55": {
+          "coverage": 0.9925558312655087,
+          "accuracy": 1.0
+        },
+        "0.60": {
+          "coverage": 0.9875930521091811,
+          "accuracy": 1.0
+        },
+        "0.65": {
+          "coverage": 0.9826302729528535,
+          "accuracy": 1.0
+        },
+        "0.70": {
+          "coverage": 0.9801488833746899,
+          "accuracy": 1.0
+        },
+        "0.75": {
+          "coverage": 0.9776674937965261,
+          "accuracy": 1.0
+        },
+        "0.80": {
+          "coverage": 0.9776674937965261,
+          "accuracy": 1.0
+        },
+        "0.85": {
+          "coverage": 0.9627791563275434,
+          "accuracy": 1.0
+        },
+        "0.90": {
+          "coverage": 0.9330024813895782,
+          "accuracy": 1.0
+        },
+        "0.95": {
+          "coverage": 0.684863523573201,
+          "accuracy": 1.0
+        },
+        "1.00": {
+          "coverage": 0.0,
+          "accuracy": NaN
+        }
+      },
+      "threshold_table_test": {
+        "0.00": {
+          "coverage": 1.0,
+          "accuracy": 1.0
+        },
+        "0.05": {
+          "coverage": 1.0,
+          "accuracy": 1.0
+        },
+        "0.10": {
+          "coverage": 1.0,
+          "accuracy": 1.0
+        },
+        "0.15": {
+          "coverage": 1.0,
+          "accuracy": 1.0
+        },
+        "0.20": {
+          "coverage": 1.0,
+          "accuracy": 1.0
+        },
+        "0.25": {
+          "coverage": 1.0,
+          "accuracy": 1.0
+        },
+        "0.30": {
+          "coverage": 1.0,
+          "accuracy": 1.0
+        },
+        "0.35": {
+          "coverage": 1.0,
+          "accuracy": 1.0
+        },
+        "0.40": {
+          "coverage": 1.0,
+          "accuracy": 1.0
+        },
+        "0.45": {
+          "coverage": 0.9966442953020134,
+          "accuracy": 1.0
+        },
+        "0.50": {
+          "coverage": 0.9966442953020134,
+          "accuracy": 1.0
+        },
+        "0.55": {
+          "coverage": 0.9966442953020134,
+          "accuracy": 1.0
+        },
+        "0.60": {
+          "coverage": 0.9932885906040269,
+          "accuracy": 1.0
+        },
+        "0.65": {
+          "coverage": 0.9899328859060402,
+          "accuracy": 1.0
+        },
+        "0.70": {
+          "coverage": 0.9865771812080537,
+          "accuracy": 1.0
+        },
+        "0.75": {
+          "coverage": 0.9832214765100671,
+          "accuracy": 1.0
+        },
+        "0.80": {
+          "coverage": 0.9765100671140939,
+          "accuracy": 1.0
+        },
+        "0.85": {
+          "coverage": 0.9530201342281879,
+          "accuracy": 1.0
+        },
+        "0.90": {
+          "coverage": 0.9026845637583892,
+          "accuracy": 1.0
+        },
+        "0.95": {
+          "coverage": 0.5939597315436241,
+          "accuracy": 1.0
+        },
+        "1.00": {
+          "coverage": 0.0,
+          "accuracy": NaN
+        }
+      },
+      "threshold_table_diagnostic": {
+        "0.00": {
+          "coverage": 1.0,
+          "accuracy": 0.9012345679012346
+        },
+        "0.05": {
+          "coverage": 1.0,
+          "accuracy": 0.9012345679012346
+        },
+        "0.10": {
+          "coverage": 1.0,
+          "accuracy": 0.9012345679012346
+        },
+        "0.15": {
+          "coverage": 1.0,
+          "accuracy": 0.9012345679012346
+        },
+        "0.20": {
+          "coverage": 1.0,
+          "accuracy": 0.9012345679012346
+        },
+        "0.25": {
+          "coverage": 1.0,
+          "accuracy": 0.9012345679012346
+        },
+        "0.30": {
+          "coverage": 1.0,
+          "accuracy": 0.9012345679012346
+        },
+        "0.35": {
+          "coverage": 1.0,
+          "accuracy": 0.9012345679012346
+        },
+        "0.40": {
+          "coverage": 0.9629629629629629,
+          "accuracy": 0.8974358974358975
+        },
+        "0.45": {
+          "coverage": 0.9382716049382716,
+          "accuracy": 0.9078947368421053
+        },
+        "0.50": {
+          "coverage": 0.9259259259259259,
+          "accuracy": 0.92
+        },
+        "0.55": {
+          "coverage": 0.9012345679012346,
+          "accuracy": 0.9315068493150684
+        },
+        "0.60": {
+          "coverage": 0.8888888888888888,
+          "accuracy": 0.9305555555555556
+        },
+        "0.65": {
+          "coverage": 0.8518518518518519,
+          "accuracy": 0.927536231884058
+        },
+        "0.70": {
+          "coverage": 0.8148148148148148,
+          "accuracy": 0.9393939393939394
+        },
+        "0.75": {
+          "coverage": 0.7283950617283951,
+          "accuracy": 0.9661016949152542
+        },
+        "0.80": {
+          "coverage": 0.691358024691358,
+          "accuracy": 0.9821428571428571
+        },
+        "0.85": {
+          "coverage": 0.6666666666666666,
+          "accuracy": 0.9814814814814815
+        },
+        "0.90": {
+          "coverage": 0.5679012345679012,
+          "accuracy": 0.9782608695652174
+        },
+        "0.95": {
+          "coverage": 0.41975308641975306,
+          "accuracy": 1.0
+        },
+        "1.00": {
+          "coverage": 0.0,
+          "accuracy": NaN
+        }
+      },
+      "threshold_val_calibrated": 0.0,
+      "threshold": 0.7,
+      "test_accuracy_by_source": {
+        "recybat24": 1.0,
+        "singapore": 1.0
+      },
+      "web_holdout_button_recall": 1.0,
+      "web_holdout_predicted_as": {
+        "button_cell": 24
+      },
+      "size_kb": 2675.8
+    }
+  },
+  "split_stats": {
+    "n_images": 2674,
+    "near_dup_pairs": 30,
+    "cross_class_near_dups": [],
+    "capped_out_of_train": {
+      "cylindrical_18650": 107,
+      "phone_pouch": 746
+    },
+    "own_button_cell_present": false,
+    "counts": {
+      "aa_aaa_9v|singapore": {
+        "train": 214,
+        "test": 33,
+        "val": 53
+      },
+      "button_cell|web": {
+        "train": 86,
+        "web_holdout": 24
+      },
+      "cylindrical_18650|recybat24": {
+        "train": 252,
+        "test": 75,
+        "val": 45
+      },
+      "cylindrical_18650|singapore": {
+        "test": 10,
+        "train": 28,
+        "val": 5
+      },
+      "phone_pouch|recybat24": {
+        "train": 516,
+        "test": 180,
+        "val": 300
+      }
+    },
+    "groups_per_class": {
+      "button_cell": 110,
+      "aa_aaa_9v": 275,
+      "cylindrical_18650": 69,
+      "phone_pouch": 59
+    },
+    "raw_per_class": {
+      "button_cell": 110,
+      "aa_aaa_9v": 300,
+      "cylindrical_18650": 522,
+      "phone_pouch": 1742
+    }
+  },
+  "train_meta": {
+    "baseline": {
+      "variant": "baseline",
+      "backend": "torch",
+      "device": "NVIDIA GeForce RTX 5070",
+      "img_size": 224,
+      "classes": [
+        "button_cell",
+        "aa_aaa_9v",
+        "cylindrical_18650",
+        "phone_pouch"
+      ],
+      "train_counts": {
+        "button_cell": 86,
+        "aa_aaa_9v": 214,
+        "cylindrical_18650": 280,
+        "phone_pouch": 516
+      },
+      "class_weights": {
+        "button_cell": 3.186046511627907,
+        "aa_aaa_9v": 1.280373831775701,
+        "cylindrical_18650": 0.9785714285714285,
+        "phone_pouch": 0.5310077519379846
+      },
+      "val": {
+        "acc": 0.9975185990333557,
+        "loss": 0.22553209960460663
+      },
+      "minutes": 1.3
+    },
+    "synthetic": {
+      "variant": "synthetic",
+      "backend": "torch",
+      "device": "NVIDIA GeForce RTX 5070",
+      "img_size": 224,
+      "classes": [
+        "button_cell",
+        "aa_aaa_9v",
+        "cylindrical_18650",
+        "phone_pouch"
+      ],
+      "train_counts": {
+        "button_cell": 518,
+        "aa_aaa_9v": 214,
+        "cylindrical_18650": 280,
+        "phone_pouch": 516
+      },
+      "class_weights": {
+        "button_cell": 0.7374517374517374,
+        "aa_aaa_9v": 1.7850467289719627,
+        "cylindrical_18650": 1.3642857142857143,
+        "phone_pouch": 0.7403100775193798
+      },
+      "val": {
+        "acc": 0.9975185990333557,
+        "loss": 0.22315241396427155
+      },
+      "minutes": 1.6
+    }
+  },
+  "export_meta": {
+    "baseline": {
+      "img_size": 224,
+      "classes": [
+        "button_cell",
+        "aa_aaa_9v",
+        "cylindrical_18650",
+        "phone_pouch"
+      ],
+      "cross_backend_max_abs_diff": 0.0004401206970214844,
+      "battery_float32_vs_keras_max_abs_diff": 4.76837158203125e-07,
+      "battery_float32_size_kb": 8701.1,
+      "battery_int8_vs_keras_max_abs_diff": 0.05534470081329346,
+      "battery_int8_size_kb": 2675.8
+    },
+    "synthetic": {
+      "img_size": 224,
+      "classes": [
+        "button_cell",
+        "aa_aaa_9v",
+        "cylindrical_18650",
+        "phone_pouch"
+      ],
+      "cross_backend_max_abs_diff": 0.00031191110610961914,
+      "battery_float32_vs_keras_max_abs_diff": 8.344650268554688e-07,
+      "battery_float32_size_kb": 8701.1,
+      "battery_int8_vs_keras_max_abs_diff": 0.028587758541107178,
+      "battery_int8_size_kb": 2675.8
+    }
+  }
+}

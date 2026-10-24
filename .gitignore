@@ -1,0 +1,12 @@
+# Rebuildable / large / local-only (keeps every file under GitHub's 100 MB limit)
+.venv/
+.cache/
+downloads/
+work/
+runs/
+logs/
+tools/uv/
+__pycache__/
+*.zip
+make_github_bundle.bat
+Claude outputs/

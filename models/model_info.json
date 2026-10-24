@@ -1,0 +1,18 @@
+{
+  "created": "2026-10-23T20:36:27",
+  "variant": "baseline",
+  "recommended_model": "battery_int8.tflite",
+  "img_size": 224,
+  "classes": [
+    "button_cell",
+    "aa_aaa_9v",
+    "cylindrical_18650",
+    "phone_pouch"
+  ],
+  "thresholds": {
+    "battery_float32.tflite": 0.7,
+    "battery_int8.tflite": 0.7
+  },
+  "preprocessing": "EXIF-rotate, RGB, pad to square with median border colour, bilinear resize to 224x224; float32 model takes 0-255 float, int8 model takes 0-255 uint8",
+  "button_cell_reliable": false
+}
